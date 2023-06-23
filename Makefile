@@ -1,4 +1,4 @@
-objects = main.o chunk.o memory.o value.o vm.o debug.o
+objects = main.o chunk.o memory.o value.o vm.o compiler.o scanner.o debug.o
 
 clox: $(objects)
 	cc -g -O0 -o clox $(objects)
