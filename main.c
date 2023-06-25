@@ -61,9 +61,7 @@ static void runFile(const char* path) {
 
 int main(int argc, const char* argv[]) 
 {
-    // initVM();
-    // Chunk chunk;
-    // initChunk(&chunk);
+    initVM();
 
     if (argc == 1) {
         repl();
@@ -73,12 +71,6 @@ int main(int argc, const char* argv[])
         fprintf(stderr,"Usage: clox [path]\n");
         exit(64);
     }
-
-    // disassembleChunk(&chunk, "test chunk");
-    // interpret(&chunk);
-
-    // freeVM();
-    // freeChunk(&chunk);
-
+    
     return 0;
 }
