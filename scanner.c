@@ -48,7 +48,7 @@ static Token makeToken(TokenType type) {
 }
 
 static bool match(char expected) {
-  if (isAtEnd) return false;
+  if (isAtEnd()) return false;
   if (*scanner.current != expected) return false;
   scanner.current++;
   return true; 
